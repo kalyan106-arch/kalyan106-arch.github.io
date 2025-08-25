@@ -1,4 +1,4 @@
-/* General page styling */
+/* General */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -13,7 +13,7 @@ body {
   padding: 20px;
 }
 
-/* ===== Sticky Navbar ===== */
+/* Navbar */
 .navbar {
   position: sticky; 
   top: 0; 
@@ -24,7 +24,7 @@ body {
   transition: background .25s ease;
 }
 
-.navbar.scrolled { background: rgba(14,116,144,.95); }
+.navbar.scrolled { background: rgba(14,116,144,1); }
 
 .nav-container {
   max-width: 1200px; 
@@ -36,36 +36,32 @@ body {
 }
 
 .nav-logo {
-  color:#fff; 
-  font-weight:800; 
-  letter-spacing:.5px; 
-  text-decoration:none;
-  background:#0ea5b5; 
-  padding:6px 10px; 
-  border-radius:10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  color: #fff; 
+  font-weight: 800; 
+  text-decoration: none;
+  background: #0ea5b5; 
+  padding: 6px 10px; 
+  border-radius: 10px;
 }
 
 .nav-menu { 
-  list-style:none; 
-  display:flex; 
-  gap:18px; 
-  align-items:center; 
+  list-style: none; 
+  display: flex; 
+  gap: 18px; 
+  align-items: center; 
 }
 
 .nav-link, .nav-resume {
-  color:#fff; 
-  text-decoration:none; 
-  font-weight:600; 
-  padding:8px 12px; 
-  border-radius:10px;
+  color: #fff; 
+  text-decoration: none; 
+  font-weight: 600; 
+  padding: 8px 12px; 
+  border-radius: 10px;
   transition: background .2s ease, transform .2s ease;
 }
 
-.nav-link:hover { background: rgba(255,255,255,.12); transform: translateY(-2px); }
-.nav-link.active { background: rgba(255,255,255,.2); }
-
-.nav-resume { border:1.5px solid #fff; }
+.nav-link:hover { background: rgba(255,255,255,.15); transform: translateY(-2px); }
+.nav-resume { border: 1.5px solid #fff; }
 .nav-resume:hover { background:#fff; color:#0E7490; }
 
 /* Mobile */
@@ -88,19 +84,18 @@ body {
     gap:10px; 
     padding:12px 0; 
     display:none;
-    box-shadow: 0 10px 20px rgba(0,0,0,.15);
   }
   .nav-menu.active { display:flex; }
 }
 
 /* Sections */
 section {
-  padding: 20px;
+  padding: 30px;
   margin: 20px 0;
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  scroll-margin-top: 90px; /* prevent navbar overlap */
+  scroll-margin-top: 90px; 
 }
 
 h2 {
@@ -110,13 +105,11 @@ h2 {
 
 /* Footer */
 .site-footer {
-  max-width: 1200px;
-  margin: 24px auto 40px;
-  padding: 16px 20px;
   text-align: center;
+  padding: 20px;
+  margin-top: 40px;
   color: #555;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  font-size: 0.95rem;
 }
+
 
